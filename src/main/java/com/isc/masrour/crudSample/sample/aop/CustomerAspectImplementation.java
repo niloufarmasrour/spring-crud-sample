@@ -16,7 +16,6 @@ import java.util.Date;
 @Component
 public class CustomerAspectImplementation {
 
-
     @Before(value = " execution (* com.isc.masrour.crudSample.sample.controller.*(..)) ")
     public void beforeCallController(JoinPoint joinPoint){
         log.info("Request to " + joinPoint.getSignature() + " started at " + new Date());
